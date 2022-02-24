@@ -1,0 +1,147 @@
+
+
+.item {
+
+    text-align: center;
+
+    background-color: rgb(156, 117, 117);
+}
+
+.fa {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#weatherSubmit {
+  
+    height: 30px; 
+    width:  60px;
+    border-radius: 50px / 50px;
+    background-color: rgb(161, 77, 77);
+}
+
+#weatherInput {
+    height: 30px;
+    width: 400px;
+   font-size: larger;
+    border-radius: 50px / 50px;
+    background-color: rgb(184, 80, 80);
+   
+
+}
+label {
+    padding: 0%;
+    margin: 0%;
+    border: 0em;
+    justify-items: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-style: italic;
+    height: auto;
+    
+}
+
+#weatherResults {
+    display: flex;
+    justify-content: center;
+
+}
+
+.weatherClass {
+    margin-top: 20px;
+    border: solid 2px rgb(71, 69, 69);
+    width: 30%;
+   text-align: center;
+   border-radius: 20px / 20px;
+   background-color: rgb(156, 117, 117,0.9);
+   font-weight: bold;
+}
+
+#forecastResults {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: auto;
+    font-weight: bold;
+  
+}
+
+.forecast {
+    text-align: center;
+    border: solid 2px rgb(134, 129, 129);
+    margin: 20px;
+    border-radius: 20px / 20px;
+    flex: 1 1 20%; 
+    background-color: rgb(160, 74, 74, 0.9);
+    font-weight: bold;
+  
+}
+body{
+    background-image: url('images/stayc.jpg');
+
+}
+
+footer{
+    height: 100px;
+    position: relative;
+    transform: translateY(-100%);
+    font-family:  "Times New Roman", Times, serif;
+    font-size: medium;
+    color: rgb(27, 25, 25);;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(143, 77, 77);
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.nav_item {
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(104, 11, 11);
+    align-items: center;
+}
+
+.nav_item a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.blank {
+    height: auto;
+    min-height: 800px;
+    padding-bottom: 30px;
+}
+  /* Masonry on large screens */
+  @media only screen and (min-width: 1024px) {
+  
+
+  }
+  
+  /* Masonry on medium-sized screens */
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+  
+
+  }
+  
+  /* Masonry on small screens */
+  @media only screen and (max-width: 767px) and (min-width: 540px) {
+  
+    #forecastResults { 
+        column-count: 2;
+    }
+  }
